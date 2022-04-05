@@ -67,7 +67,7 @@ export default function DashboardPanel() {
                   120
                 </div>
                 <div className="dashboard__panel__content__stats__content__label">
-                  Totle Receipt
+                  Number of invoices
                 </div>
               </div>
             </div>
@@ -93,7 +93,7 @@ export default function DashboardPanel() {
                   120
                 </div>
                 <div className="dashboard__panel__content__stats__content__label">
-                  Total Discount
+                  Total VAT value
                 </div>
               </div>
             </div>
@@ -148,7 +148,7 @@ export default function DashboardPanel() {
                   120
                 </div>
                 <div className="dashboard__panel__content__stats__content__label">
-                  Total Amount of Purchase
+                  Total discount amount
                 </div>
               </div>
             </div>
@@ -186,9 +186,9 @@ export default function DashboardPanel() {
             <TotalReceipt />
           </div>
         </div>
-        <div className="dashboard__panel__content__row">
+        {/* <div className="dashboard__panel__content__row">
           <TotalPurchases />
-        </div>
+        </div> */}
       </div>
     </div>
   );
@@ -210,7 +210,7 @@ function TotalReceipt({}) {
   return (
     <div className="dashboard__panel__content__traffic__source">
       <div className="dashboard__panel__content__traffic__source__heading">
-        Total Receipt
+        Total Site Percentage
       </div>
       <Doughnut
         data={data}
@@ -312,7 +312,7 @@ function TotalCustomer({}) {
     <div className="dashboard__panel__content__post__created">
       <div className="dashboard__panel__content__post__created__header">
         <div className="dashboard__panel__content__post__created__header__heading">
-          Total Customer
+          Number of Customer
         </div>
         <input
           type="month"
@@ -342,7 +342,7 @@ function TotalDiscount({}) {
     <div className="dashboard__panel__content__pages">
       <div className="dashboard__panel__content__pages__left">
         <div className="dashboard__panel__content__pages__heading">
-          Total Discount
+          Number of partners
         </div>
         <div className="dashboard__panel__content__pages__left__content">
           <div className="dashboard__panel__content__pages__left__content__entry">
@@ -423,7 +423,7 @@ function TotalPurchases() {
           marginBottom: "1em",
         }}
       >
-        Total Purchases
+        Total discount amount
       </div>
       <Bar options={options} data={data} style={{ maxHeight: 300 }} />
     </div>

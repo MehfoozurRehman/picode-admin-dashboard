@@ -18,12 +18,6 @@ export default function Sidebar({}) {
             <div className="container__sidebar__header__content__name">
               Dayyan Shahid
             </div>
-            <Link
-              to="/dashboard/settings/edit_profile"
-              className="container__sidebar__header__content__link"
-            >
-              Edit Profile
-            </Link>
           </div>
         </div>
         <div className="container__sidebar__content">
@@ -50,8 +44,8 @@ export default function Sidebar({}) {
             }
           />
           <NavLink
-            to="/dashboard/allocate_rewards"
-            title="Allocate Rewards"
+            to="/dashboard/ads_management"
+            title="Ads Management"
             svg={
               <svg
                 id="Group_1148"
@@ -96,8 +90,8 @@ export default function Sidebar({}) {
             }
           />
           <NavLink
-            to="/dashboard/invoice_bills"
-            title="Invoice & Bills"
+            to="/dashboard/company"
+            title="Company"
             svg={
               <svg
                 id="Group_1147"
@@ -163,50 +157,8 @@ export default function Sidebar({}) {
             }
           />
           <NavLink
-            to="/dashboard/settings"
-            title="Settings"
-            svg={
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="21.466"
-                height="21.466"
-                viewBox="0 0 21.466 21.466"
-              >
-                <g
-                  id="Icon_feather-settings"
-                  data-name="Icon feather-settings"
-                  transform="translate(0.75 0.75)"
-                >
-                  <path
-                    id="Path_798"
-                    data-name="Path 798"
-                    d="M18.945,16.223A2.723,2.723,0,1,1,16.223,13.5,2.723,2.723,0,0,1,18.945,16.223Z"
-                    transform="translate(-6.24 -6.24)"
-                    fill="none"
-                    stroke="#fff"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="1.5"
-                  />
-                  <path
-                    id="Path_799"
-                    data-name="Path 799"
-                    d="M18.2,14.206a1.5,1.5,0,0,0,.3,1.652l.054.054a1.816,1.816,0,1,1-2.568,2.568l-.054-.054A1.51,1.51,0,0,0,13.371,19.5v.154a1.815,1.815,0,0,1-3.63,0v-.082a1.5,1.5,0,0,0-.98-1.37,1.5,1.5,0,0,0-1.652.3l-.054.054a1.816,1.816,0,1,1-2.568-2.568l.054-.054a1.51,1.51,0,0,0-1.071-2.559H3.315a1.815,1.815,0,1,1,0-3.63H3.4a1.5,1.5,0,0,0,1.37-.98,1.5,1.5,0,0,0-.3-1.652l-.054-.054A1.816,1.816,0,1,1,6.982,4.486l.054.054a1.5,1.5,0,0,0,1.652.3H8.76a1.5,1.5,0,0,0,.908-1.37V3.315a1.815,1.815,0,0,1,3.63,0V3.4a1.51,1.51,0,0,0,2.559,1.071l.054-.054A1.816,1.816,0,1,1,18.48,6.982l-.054.054a1.5,1.5,0,0,0-.3,1.652V8.76a1.5,1.5,0,0,0,1.37.908h.154a1.815,1.815,0,0,1,0,3.63h-.082a1.5,1.5,0,0,0-1.37.908Z"
-                    transform="translate(-1.5 -1.5)"
-                    fill="none"
-                    stroke="#fff"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="1.5"
-                  />
-                </g>
-              </svg>
-            }
-          />
-
-          <NavLink
-            to="/dashboard/history_promos"
-            title="History Promos"
+            to="/dashboard/customer"
+            title="Customer"
             svg={
               <svg
                 id="Group_1146"
@@ -242,156 +194,6 @@ export default function Sidebar({}) {
                   data-name="Path 805"
                   d="M93.743,93.969a2.029,2.029,0,0,1,4.059-.025,2.029,2.029,0,1,1-4.059.025m2.7.009a.665.665,0,0,0-.676-.671.658.658,0,0,0-.669.634.677.677,0,0,0,.652.7.684.684,0,0,0,.694-.662"
                   transform="translate(-86.043 -84.391)"
-                  fill="#fff"
-                />
-              </svg>
-            }
-          />
-          <NavLink
-            to="/dashboard/customer_requests"
-            title="Customer Requests"
-            svg={
-              <svg
-                id="Group_1146"
-                data-name="Group 1146"
-                xmlns="http://www.w3.org/2000/svg"
-                width="23.175"
-                height="23.092"
-                viewBox="0 0 23.175 23.092"
-              >
-                <path
-                  id="Path_800"
-                  data-name="Path 800"
-                  d="M13.2.451c.5.12,1.178.279,1.854.445,1.593.392,3.184.793,4.781,1.17a.576.576,0,0,0,.444-.146C20.832,1.394,21.365.842,21.911.3c.377-.371.783-.4,1.078-.093s.245.682-.115,1.047c-.539.545-1.079,1.089-1.631,1.62a.472.472,0,0,0-.137.537q.8,3.12,1.554,6.25a2.065,2.065,0,0,1-.681,2.039q-3.482,3.457-6.95,6.929-1.875,1.87-3.751,3.74a2.037,2.037,0,0,1-3.114-.007Q4.452,18.673.748,14.974a2.024,2.024,0,0,1-.006-3.136Q6.122,6.476,11.508,1.119A2.285,2.285,0,0,1,13.2.451m5.719,2.827a2.138,2.138,0,0,0-.238-.1c-1.819-.449-3.635-.911-5.463-1.325a.977.977,0,0,0-.757.256Q7.05,7.45,1.677,12.821a.7.7,0,0,0,.005,1.166Q5.4,17.7,9.129,21.408a.718.718,0,0,0,1.2,0q5.366-5.349,10.729-10.7a.842.842,0,0,0,.251-.888c-.339-1.311-.654-2.628-.98-3.942-.13-.526-.263-1.052-.427-1.7-.474.493-.853.921-1.27,1.306a.67.67,0,0,0-.217.779,1.986,1.986,0,0,1-1.484,2.418A2.03,2.03,0,1,1,17,4.75a.605.605,0,0,0,.472-.041c.484-.442.935-.919,1.446-1.431M17.108,6.725a.651.651,0,0,0-.659-.681.658.658,0,0,0-.672.63.672.672,0,0,0,.641.707.664.664,0,0,0,.69-.656"
-                  transform="translate(0 0)"
-                  fill="#fff"
-                />
-                <path
-                  id="Path_803"
-                  data-name="Path 803"
-                  d="M64.321,145.738c-.556.019-.859-.216-.884-.62a.688.688,0,0,1,.689-.714q4.217-.468,8.434-.931a.683.683,0,1,1,.157,1.34q-3.789.424-7.579.836l-.817.089"
-                  transform="translate(-58.225 -131.68)"
-                  fill="#fff"
-                />
-                <path
-                  id="Path_804"
-                  data-name="Path 804"
-                  d="M109.36,175.368a2.036,2.036,0,1,1-2.055-2.022,2.047,2.047,0,0,1,2.055,2.022m-1.369-.009a.665.665,0,1,0-1.329.055.665.665,0,0,0,1.329-.055"
-                  transform="translate(-96.64 -159.107)"
-                  fill="#fff"
-                />
-                <path
-                  id="Path_805"
-                  data-name="Path 805"
-                  d="M93.743,93.969a2.029,2.029,0,0,1,4.059-.025,2.029,2.029,0,1,1-4.059.025m2.7.009a.665.665,0,0,0-.676-.671.658.658,0,0,0-.669.634.677.677,0,0,0,.652.7.684.684,0,0,0,.694-.662"
-                  transform="translate(-86.043 -84.391)"
-                  fill="#fff"
-                />
-              </svg>
-            }
-          />
-          <NavLink
-            to="/dashboard/ad_management"
-            title="Ads Management"
-            svg={
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="20.259"
-                height="20.259"
-                viewBox="0 0 20.259 20.259"
-              >
-                <path
-                  id="megaphone"
-                  d="M1.449,12.409l3.489,7.851H7.011a2.323,2.323,0,0,0,2.122-3.265L7.208,12.662H9.286a4.226,4.226,0,0,1,4.221,4.221h1.688V0H13.506A4.226,4.226,0,0,1,9.286,4.221H2.532A2.532,2.532,0,0,0,0,6.753V10.13a2.532,2.532,0,0,0,1.449,2.279Zm6.141,5.27a.634.634,0,0,1-.579.892H6.036L3.409,12.662H5.36ZM1.688,6.753a.844.844,0,0,1,.844-.844H9.286a5.887,5.887,0,0,0,4.222-1.783v8.63a5.886,5.886,0,0,0-4.221-1.782H2.532a.844.844,0,0,1-.844-.844Zm17.13,6.506-1.931-1.931,1.194-1.194,1.931,1.931Zm-.706-6.542L16.919,5.523l1.9-1.9,1.194,1.194Zm-.386.88h2.532V9.286H17.727Z"
-                  fill="#fff"
-                />
-              </svg>
-            }
-          />
-          <NavLink
-            to="/dashboard/payment_history"
-            title="Payment History"
-            svg={
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="20.011"
-                height="15.008"
-                viewBox="0 0 20.011 15.008"
-              >
-                <g
-                  id="_01_align_center"
-                  data-name="01 align center"
-                  transform="translate(0 -3)"
-                >
-                  <ellipse
-                    id="Ellipse_25"
-                    data-name="Ellipse 25"
-                    cx="1"
-                    cy="1.5"
-                    rx="1"
-                    ry="1.5"
-                    transform="translate(4 12)"
-                    fill="#fff"
-                  />
-                  <path
-                    id="Path_2254"
-                    data-name="Path 2254"
-                    d="M17.51,3H2.5A2.5,2.5,0,0,0,0,5.5V18.008H20.011V5.5A2.5,2.5,0,0,0,17.51,3ZM2.5,4.668H17.51a.834.834,0,0,1,.834.834V7.169H1.668V5.5A.834.834,0,0,1,2.5,4.668ZM1.668,16.341v-7.5H18.343v7.5Z"
-                    transform="translate(0)"
-                    fill="#fff"
-                  />
-                </g>
-              </svg>
-            }
-          />
-          <NavLink
-            to="/dashboard/notifications"
-            title="Notifications"
-            svg={
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="15.18"
-                height="19"
-                viewBox="0 0 15.18 19"
-              >
-                <g
-                  id="Icon_ionic-ios-notifications-outline"
-                  data-name="Icon ionic-ios-notifications-outline"
-                  transform="translate(-6.775 -3.93)"
-                >
-                  <path
-                    id="Path_21952"
-                    data-name="Path 21952"
-                    d="M18.53,28.336a.615.615,0,0,0-.6.484,1.19,1.19,0,0,1-.237.518.9.9,0,0,1-.765.28.912.912,0,0,1-.765-.28,1.19,1.19,0,0,1-.237-.518.615.615,0,0,0-.6-.484h0a.619.619,0,0,0-.6.755,2.122,2.122,0,0,0,2.208,1.762,2.118,2.118,0,0,0,2.208-1.762.622.622,0,0,0-.6-.755Z"
-                    transform="translate(-2.573 -7.922)"
-                    fill="#fff"
-                  />
-                  <path
-                    id="Path_21953"
-                    data-name="Path 21953"
-                    d="M21.764,18c-.731-.964-2.17-1.529-2.17-5.846,0-4.431-1.957-6.211-3.78-6.639-.171-.043-.294-.1-.294-.28V5.1A1.165,1.165,0,0,0,14.38,3.93h-.028A1.165,1.165,0,0,0,13.212,5.1v.138c0,.176-.123.237-.294.28-1.828.432-3.78,2.208-3.78,6.639,0,4.317-1.439,4.877-2.17,5.846a.943.943,0,0,0,.755,1.51h13.3A.943.943,0,0,0,21.764,18Zm-1.852.275H8.838a.208.208,0,0,1-.157-.347,5.753,5.753,0,0,0,1-1.586,10.762,10.762,0,0,0,.679-4.188,7.283,7.283,0,0,1,.993-4.122,3.047,3.047,0,0,1,1.838-1.311,1.664,1.664,0,0,0,.883-.5.376.376,0,0,1,.565-.009,1.72,1.72,0,0,0,.893.508,3.047,3.047,0,0,1,1.838,1.311,7.283,7.283,0,0,1,.993,4.122,10.762,10.762,0,0,0,.679,4.188,5.819,5.819,0,0,0,1.021,1.61A.2.2,0,0,1,19.912,18.277Z"
-                    transform="translate(0 0)"
-                    fill="#fff"
-                  />
-                </g>
-              </svg>
-            }
-          />
-          <NavLink
-            to="/dashboard/call_us"
-            title="Call Us"
-            svg={
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="14.868"
-                height="14.887"
-                viewBox="0 0 14.868 14.887"
-              >
-                <path
-                  id="Icon_zocial-call"
-                  data-name="Icon zocial-call"
-                  d="M3.3,5.868a1.1,1.1,0,0,1,.279-.595l2.23-2.23q.261-.223.39.074L8,6.5a.487.487,0,0,1-.093.576l-.818.818a.925.925,0,0,0-.26.576A2.837,2.837,0,0,0,7.406,9.9,12.222,12.222,0,0,0,8.54,11.389l.576.594c.174.174.4.387.67.641a11.222,11.222,0,0,0,1.347,1,3.015,3.015,0,0,0,1.478.623.809.809,0,0,0,.595-.242l.967-.967a.408.408,0,0,1,.557-.074l3.253,1.914a.272.272,0,0,1,.149.2.237.237,0,0,1-.074.214l-2.23,2.23a1.092,1.092,0,0,1-.594.278,4.5,4.5,0,0,1-2.054-.251,9.3,9.3,0,0,1-2.118-1.013q-.976-.632-1.812-1.282T7.909,14.139l-.483-.465q-.186-.186-.493-.511t-1.07-1.282a18.667,18.667,0,0,1-1.32-1.868A10.9,10.9,0,0,1,3.577,7.94,4.409,4.409,0,0,1,3.3,5.868Z"
-                  transform="translate(-3.267 -2.947)"
                   fill="#fff"
                 />
               </svg>
@@ -399,49 +201,6 @@ export default function Sidebar({}) {
           />
         </div>
         <div className="container__sidebar__footer">
-          <button
-            className="container__sidebar__footer__entry"
-            onClick={() => {
-              navigate("/change_password");
-            }}
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="18.099"
-              height="19.976"
-              viewBox="0 0 18.099 19.976"
-            >
-              <g
-                id="Icon_feather-lock"
-                data-name="Icon feather-lock"
-                transform="translate(0.6 0.6)"
-              >
-                <path
-                  id="Path_6620"
-                  data-name="Path 6620"
-                  d="M6.378,16.5H19.521A1.878,1.878,0,0,1,21.4,18.378v6.572a1.878,1.878,0,0,1-1.878,1.878H6.378A1.878,1.878,0,0,1,4.5,24.949V18.378A1.878,1.878,0,0,1,6.378,16.5Z"
-                  transform="translate(-4.5 -8.051)"
-                  fill="none"
-                  stroke="#fff"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="1.2"
-                />
-                <path
-                  id="Path_6621"
-                  data-name="Path 6621"
-                  d="M10.5,11.449V7.694a4.694,4.694,0,1,1,9.388,0v3.755"
-                  transform="translate(-6.745 -3)"
-                  fill="none"
-                  stroke="#fff"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="1.2"
-                />
-              </g>
-            </svg>
-            Change Password
-          </button>
           <button
             className="container__sidebar__footer__entry"
             onClick={() => {

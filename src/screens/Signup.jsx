@@ -23,11 +23,7 @@ export default function Signup() {
             />
           </div>
           <div className="authentication__container__overlay__form__content">
-            <div className="authentication__container__overlay__form__content__row">
-              <InputBox placeholder="Brand Name English" error="" autoFocus />
-              <div style={{ width: "30px" }}>&nbsp;</div>
-              <InputBox placeholder="Brand Name Arabic" error="" />
-            </div>
+            <InputBox placeholder="Name" type="text" error="" />
             <InputBox placeholder="Email" type="email" error="" />
             <InputBox placeholder="Phone" type="tel" error="" />
             <div className="authentication__container__overlay__form__content__row">
@@ -53,7 +49,7 @@ export default function Signup() {
                       href="#"
                       className="authentication__container__overlay__form__checkbox__anchor"
                     >
-                      Partnership Agreement
+                      Terms & Conditions
                     </a>
                   </div>
                 }
@@ -67,13 +63,12 @@ export default function Signup() {
                 }}
               />
             </div>
-
-            <a
-              href="#"
+            <Link
+              to="/dashboard"
               className="authentication__container__overlay__form__btn"
             >
-              Next
-            </a>
+              Sign Up
+            </Link>
             <div className="authentication__container__overlay__form__toSignup">
               Already have an account? <Link to="/"> Log In</Link>
             </div>
