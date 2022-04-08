@@ -10,6 +10,10 @@ import DashboardPanel from "./screens/DashboardPanel";
 import ChangePassword from "./screens/ChangePassword";
 import ForgotPassword from "./screens/ForgotPassword";
 import DeleteConfirmation from "./components/DeleteConfirmation";
+import Partners from "./screens/Partners";
+import PartnersDetails from "./screens/PartnersDetails";
+import CustomersDetails from "./screens/CustomersDetails";
+import Customers from "./screens/Customers";
 
 function Dashboard() {
   return (
@@ -41,6 +45,13 @@ export default function App() {
 
         <Route path="/dashboard" element={<Dashboard />}>
           <Route path="" element={<DashboardPanel />} />
+          <Route path="partners" element={<Partners />} />
+          <Route path="partners/details" element={<PartnersDetails />} />
+          <Route
+            path="customers"
+            element={<Customers onDelete={setIsDeleteConfirmation} />}
+          />
+          <Route path="customers/details" element={<CustomersDetails />} />
         </Route>
       </Routes>
     </>
