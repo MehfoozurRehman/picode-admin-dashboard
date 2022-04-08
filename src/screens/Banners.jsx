@@ -110,7 +110,7 @@ export default function Banners({ onAdd, onEdit, onDelete }) {
             <button
               className="main__header__top__buttons__button"
               onClick={() => {
-                onAdd(true);
+                navigate("/dashboard/ads_management/banners/add");
               }}
             >
               Add New
@@ -122,135 +122,172 @@ export default function Banners({ onAdd, onEdit, onDelete }) {
         <div className="main__content__table">
           <div className="main__content__table__header">
             <TableHeaderEntry title="Action" />
-            <TableHeaderEntry title="Name" />
-            <TableHeaderEntry title="Phone Number" />
-            <TableHeaderEntry title="Email Address" />
-            <TableHeaderEntry title="Last 4 digits of Credit/Visa card" />
+            <TableHeaderEntry title="Title" />
+            <TableHeaderEntry title="Duration" />
+            <TableHeaderEntry title="Is Featured" />
+            <TableHeaderEntry title="Price" />
+            <TableHeaderEntry title="Image" />
           </div>
           <BannersTableEntry
             onView={() => {
               navigate("/dashboard/Banners/details");
             }}
-            onEdit={onEdit}
+            onEdit={() => {
+              navigate("/dashboard/ads_management/banners/add");
+            }}
             onDelete={onDelete}
           />
           <BannersTableEntry
             onView={() => {
               navigate("/dashboard/Banners/details");
             }}
-            onEdit={onEdit}
+            onEdit={() => {
+              navigate("/dashboard/ads_management/banners/add");
+            }}
             onDelete={onDelete}
           />
           <BannersTableEntry
             onView={() => {
               navigate("/dashboard/Banners/details");
             }}
-            onEdit={onEdit}
+            onEdit={() => {
+              navigate("/dashboard/ads_management/banners/add");
+            }}
             onDelete={onDelete}
           />
           <BannersTableEntry
             onView={() => {
               navigate("/dashboard/Banners/details");
             }}
-            onEdit={onEdit}
+            onEdit={() => {
+              navigate("/dashboard/ads_management/banners/add");
+            }}
             onDelete={onDelete}
           />
           <BannersTableEntry
             onView={() => {
               navigate("/dashboard/Banners/details");
             }}
-            onEdit={onEdit}
+            onEdit={() => {
+              navigate("/dashboard/ads_management/banners/add");
+            }}
             onDelete={onDelete}
           />
           <BannersTableEntry
             onView={() => {
               navigate("/dashboard/Banners/details");
             }}
-            onEdit={onEdit}
+            onEdit={() => {
+              navigate("/dashboard/ads_management/banners/add");
+            }}
             onDelete={onDelete}
           />
           <BannersTableEntry
             onView={() => {
               navigate("/dashboard/Banners/details");
             }}
-            onEdit={onEdit}
+            onEdit={() => {
+              navigate("/dashboard/ads_management/banners/add");
+            }}
             onDelete={onDelete}
           />
           <BannersTableEntry
             onView={() => {
               navigate("/dashboard/Banners/details");
             }}
-            onEdit={onEdit}
+            onEdit={() => {
+              navigate("/dashboard/ads_management/banners/add");
+            }}
             onDelete={onDelete}
           />
           <BannersTableEntry
             onView={() => {
               navigate("/dashboard/Banners/details");
             }}
-            onEdit={onEdit}
+            onEdit={() => {
+              navigate("/dashboard/ads_management/banners/add");
+            }}
             onDelete={onDelete}
           />
           <BannersTableEntry
             onView={() => {
               navigate("/dashboard/Banners/details");
             }}
-            onEdit={onEdit}
+            onEdit={() => {
+              navigate("/dashboard/ads_management/banners/add");
+            }}
             onDelete={onDelete}
           />
           <BannersTableEntry
             onView={() => {
               navigate("/dashboard/Banners/details");
             }}
-            onEdit={onEdit}
+            onEdit={() => {
+              navigate("/dashboard/ads_management/banners/add");
+            }}
             onDelete={onDelete}
           />
           <BannersTableEntry
             onView={() => {
               navigate("/dashboard/Banners/details");
             }}
-            onEdit={onEdit}
+            onEdit={() => {
+              navigate("/dashboard/ads_management/banners/add");
+            }}
             onDelete={onDelete}
           />
           <BannersTableEntry
             onView={() => {
               navigate("/dashboard/Banners/details");
             }}
-            onEdit={onEdit}
+            onEdit={() => {
+              navigate("/dashboard/ads_management/banners/add");
+            }}
             onDelete={onDelete}
           />
           <BannersTableEntry
             onView={() => {
               navigate("/dashboard/Banners/details");
             }}
-            onEdit={onEdit}
+            onEdit={() => {
+              navigate("/dashboard/ads_management/banners/add");
+            }}
             onDelete={onDelete}
           />
           <BannersTableEntry
             onView={() => {
               navigate("/dashboard/Banners/details");
             }}
-            onEdit={onEdit}
+            onEdit={() => {
+              navigate("/dashboard/ads_management/banners/add");
+            }}
             onDelete={onDelete}
           />
           <BannersTableEntry
             onView={() => {
               navigate("/dashboard/Banners/details");
             }}
-            onEdit={onEdit}
+            onEdit={() => {
+              navigate("/dashboard/ads_management/banners/add");
+            }}
             onDelete={onDelete}
           />
           <BannersTableEntry
             onView={() => {
               navigate("/dashboard/Banners/details");
             }}
-            onEdit={onEdit}
+            onEdit={() => {
+              navigate("/dashboard/ads_management/banners/add");
+            }}
             onDelete={onDelete}
           />
           <BannersTableEntry
             onView={() => {
               navigate("/dashboard/Banners/details");
             }}
-            onEdit={onEdit}
+            onEdit={() => {
+              navigate("/dashboard/ads_management/banners/add");
+            }}
             onDelete={onDelete}
           />
         </div>

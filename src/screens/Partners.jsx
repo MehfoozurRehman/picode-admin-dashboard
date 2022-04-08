@@ -152,11 +152,12 @@ export default function Partners({ onAdd, onEdit, onDelete }) {
         <div className="main__content__table">
           <div className="main__content__table__header">
             <TableHeaderEntry title="Action" />
-            <TableHeaderEntry title="Title" />
-            <TableHeaderEntry title="Duration" />
-            <TableHeaderEntry title="Is Featured" />
-            <TableHeaderEntry title="Price" />
-            <TableHeaderEntry title="Image" />
+            <TableHeaderEntry title="Brand Name in English" />
+            <TableHeaderEntry title="Brand Name in Arabic" />
+            <TableHeaderEntry title="Email" />
+            <TableHeaderEntry title="Phone" />
+            <TableHeaderEntry title="Status" />
+            <TableHeaderEntry title="Logo" />
           </div>
           <PartnersTableEntry
             onView={() => {
