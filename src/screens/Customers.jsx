@@ -1,6 +1,5 @@
-import React, { useState } from "react";
+import React from "react";
 import { useNavigate } from "react-router-dom";
-import Tab from "../components/Tab";
 import TableHeaderEntry from "../components/TableHeaderEntry";
 
 function CustomersTableEntry({ onView, onEdit, onDelete }) {
@@ -132,7 +131,7 @@ export default function Customers({ onAdd, onEdit, onDelete }) {
             <button
               className="main__header__top__buttons__button"
               onClick={() => {
-                onAdd(true);
+                navigate("/dashboard/customers/add");
               }}
             >
               Add New
@@ -153,126 +152,180 @@ export default function Customers({ onAdd, onEdit, onDelete }) {
             onView={() => {
               navigate("/dashboard/Customers/details");
             }}
-            onEdit={onEdit}
+            onEdit={() => {
+              navigate("/dashboard/customers/edit");
+            }}
             onDelete={onDelete}
           />
           <CustomersTableEntry
             onView={() => {
               navigate("/dashboard/Customers/details");
             }}
-            onEdit={onEdit}
+            onEdit={() => {
+              navigate("/dashboard/customers/edit");
+            }}
             onDelete={onDelete}
           />
           <CustomersTableEntry
             onView={() => {
               navigate("/dashboard/Customers/details");
             }}
-            onEdit={onEdit}
+            onEdit={() => {
+              navigate("/dashboard/customers/edit");
+            }}
             onDelete={onDelete}
           />
           <CustomersTableEntry
             onView={() => {
               navigate("/dashboard/Customers/details");
             }}
-            onEdit={onEdit}
+            onEdit={() => {
+              navigate("/dashboard/customers/edit");
+            }}
             onDelete={onDelete}
           />
           <CustomersTableEntry
             onView={() => {
               navigate("/dashboard/Customers/details");
             }}
-            onEdit={onEdit}
+            onEdit={() => {
+              navigate("/dashboard/customers/edit");
+            }}
             onDelete={onDelete}
           />
           <CustomersTableEntry
             onView={() => {
               navigate("/dashboard/Customers/details");
             }}
-            onEdit={onEdit}
+            onEdit={() => {
+              navigate("/dashboard/customers/edit");
+            }}
             onDelete={onDelete}
           />
           <CustomersTableEntry
             onView={() => {
               navigate("/dashboard/Customers/details");
             }}
-            onEdit={onEdit}
+            onEdit={() => {
+              navigate("/dashboard/customers/edit");
+            }}
             onDelete={onDelete}
           />
           <CustomersTableEntry
             onView={() => {
               navigate("/dashboard/Customers/details");
             }}
-            onEdit={onEdit}
+            onEdit={() => {
+              navigate("/dashboard/customers/edit");
+            }}
             onDelete={onDelete}
           />
           <CustomersTableEntry
             onView={() => {
               navigate("/dashboard/Customers/details");
             }}
-            onEdit={onEdit}
+            onEdit={() => {
+              navigate("/dashboard/customers/edit");
+            }}
             onDelete={onDelete}
           />
           <CustomersTableEntry
             onView={() => {
               navigate("/dashboard/Customers/details");
             }}
-            onEdit={onEdit}
+            onEdit={() => {
+              navigate("/dashboard/customers/edit");
+            }}
             onDelete={onDelete}
           />
           <CustomersTableEntry
             onView={() => {
               navigate("/dashboard/Customers/details");
             }}
-            onEdit={onEdit}
+            onEdit={() => {
+              navigate("/dashboard/customers/edit");
+            }}
             onDelete={onDelete}
           />
           <CustomersTableEntry
             onView={() => {
               navigate("/dashboard/Customers/details");
             }}
-            onEdit={onEdit}
+            onEdit={() => {
+              navigate("/dashboard/customers/edit");
+            }}
             onDelete={onDelete}
           />
           <CustomersTableEntry
             onView={() => {
               navigate("/dashboard/Customers/details");
             }}
-            onEdit={onEdit}
+            onEdit={() => {
+              navigate("/dashboard/customers/edit");
+            }}
             onDelete={onDelete}
           />
           <CustomersTableEntry
             onView={() => {
               navigate("/dashboard/Customers/details");
             }}
-            onEdit={onEdit}
+            onEdit={() => {
+              navigate("/dashboard/customers/edit");
+            }}
             onDelete={onDelete}
           />
           <CustomersTableEntry
             onView={() => {
               navigate("/dashboard/Customers/details");
             }}
-            onEdit={onEdit}
+            onEdit={() => {
+              navigate("/dashboard/customers/edit");
+            }}
             onDelete={onDelete}
           />
           <CustomersTableEntry
             onView={() => {
               navigate("/dashboard/Customers/details");
             }}
-            onEdit={onEdit}
+            onEdit={() => {
+              navigate("/dashboard/customers/edit");
+            }}
             onDelete={onDelete}
           />
           <CustomersTableEntry
             onView={() => {
               navigate("/dashboard/Customers/details");
             }}
-            onEdit={onEdit}
+            onEdit={() => {
+              navigate("/dashboard/customers/edit");
+            }}
             onDelete={onDelete}
           />
           <CustomersTableEntry
             onView={() => {
               navigate("/dashboard/Customers/details");
             }}
-            onEdit={onEdit}
+            onEdit={() => {
+              navigate("/dashboard/customers/edit");
+            }}
+            onDelete={onDelete}
+          />
+          <CustomersTableEntry
+            onView={() => {
+              navigate("/dashboard/Customers/details");
+            }}
+            onEdit={() => {
+              navigate("/dashboard/customers/edit");
+            }}
+            onDelete={onDelete}
+          />
+          <CustomersTableEntry
+            onView={() => {
+              navigate("/dashboard/Customers/details");
+            }}
+            onEdit={() => {
+              navigate("/dashboard/customers/edit");
+            }}
             onDelete={onDelete}
           />
         </div>

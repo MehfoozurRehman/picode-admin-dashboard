@@ -19,6 +19,7 @@ import Headlines from "./screens/Headlines";
 import PartnersForm from "./screens/PartnersForm";
 import BannersForm from "./screens/BannersForm";
 import HeadlinesForm from "./screens/HeadlinesForm";
+import CustomersForm from "./screens/CustomersForm";
 
 function Dashboard() {
   return (
@@ -87,6 +88,14 @@ export default function App() {
           <Route
             path="customers"
             element={<Customers onDelete={setIsDeleteConfirmation} />}
+          />
+          <Route
+            path="customers/add"
+            element={<CustomersForm heading="Add" />}
+          />
+          <Route
+            path="customers/edit"
+            element={<CustomersForm heading="Edit" />}
           />
           <Route path="customers/details" element={<CustomersDetails />} />
         </Route>

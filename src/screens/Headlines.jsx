@@ -86,12 +86,17 @@ function HeadlinesTableEntry({ onView, onEdit, onDelete }) {
           </svg>
         </button>
       </div>
-      <div className="main__content__table__list__entry">Bilal John</div>
-      <div className="main__content__table__list__entry">+92 313 7180324</div>
+      <div className="main__content__table__list__entry">Title</div>
+      <div className="main__content__table__list__entry">Duration</div>
+      <div className="main__content__table__list__entry">Is Featured</div>
+      <div className="main__content__table__list__entry">Price</div>
       <div className="main__content__table__list__entry">
-        BilalJohn@gmail.com
+        <img
+          src="https://images.unsplash.com/photo-1453728013993-6d66e9c9123a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+          alt=""
+          className="main__content__table__list__entry__img"
+        />
       </div>
-      <div className="main__content__table__list__entry">**********8997</div>
     </div>
   );
 }
