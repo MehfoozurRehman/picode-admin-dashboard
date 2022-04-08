@@ -90,8 +90,8 @@ export default function Sidebar({}) {
             }
           />
           <NavLink
-            to="/dashboard/company"
-            title="Company"
+            to="/dashboard/partners"
+            title="Partners"
             svg={
               <svg
                 id="Group_1147"
@@ -157,8 +157,8 @@ export default function Sidebar({}) {
             }
           />
           <NavLink
-            to="/dashboard/customer"
-            title="Customer"
+            to="/dashboard/customers"
+            title="Customers"
             svg={
               <svg
                 id="Group_1146"

@@ -93,7 +93,7 @@ export default function DashboardPanel() {
                   120
                 </div>
                 <div className="dashboard__panel__content__stats__content__label">
-                  Total VAT value
+                  Invoice value
                 </div>
               </div>
             </div>
@@ -148,7 +148,7 @@ export default function DashboardPanel() {
                   120
                 </div>
                 <div className="dashboard__panel__content__stats__content__label">
-                  Total discount amount
+                  Total VAT value
                 </div>
               </div>
             </div>
@@ -173,22 +173,72 @@ export default function DashboardPanel() {
                   120
                 </div>
                 <div className="dashboard__panel__content__stats__content__label">
-                  Totle Customer
+                  Total discount amount
                 </div>
               </div>
             </div>
           </div>
           <div className="dashboard__panel__content__col">
             <TotalCustomer />
-            <TotalDiscount />
+            <div className="dashboard__panel__content__stats">
+              <div className="dashboard__panel__content__stats__icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="28.964"
+                  height="30.5"
+                  viewBox="0 0 28.964 30.5"
+                >
+                  <path
+                    id="Icon_open-person"
+                    data-name="Icon open-person"
+                    d="M14.482,0C10.5,0,7.241,4.27,7.241,9.531s3.258,9.531,7.241,9.531,7.241-4.27,7.241-9.531S18.464,0,14.482,0ZM6.915,19.063A7.469,7.469,0,0,0,0,26.688V30.5H28.964V26.688a7.443,7.443,0,0,0-6.915-7.625,9.978,9.978,0,0,1-7.567,3.813A9.978,9.978,0,0,1,6.915,19.063Z"
+                    fill="#1d1d1d"
+                  />
+                </svg>
+              </div>
+              <div className="dashboard__panel__content__stats__content">
+                <div className="dashboard__panel__content__stats__content__value">
+                  120
+                </div>
+                <div className="dashboard__panel__content__stats__content__label">
+                  Number of customers
+                </div>
+              </div>
+            </div>
+            <div className="dashboard__panel__content__stats">
+              <div className="dashboard__panel__content__stats__icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="28.964"
+                  height="30.5"
+                  viewBox="0 0 28.964 30.5"
+                >
+                  <path
+                    id="Icon_open-person"
+                    data-name="Icon open-person"
+                    d="M14.482,0C10.5,0,7.241,4.27,7.241,9.531s3.258,9.531,7.241,9.531,7.241-4.27,7.241-9.531S18.464,0,14.482,0ZM6.915,19.063A7.469,7.469,0,0,0,0,26.688V30.5H28.964V26.688a7.443,7.443,0,0,0-6.915-7.625,9.978,9.978,0,0,1-7.567,3.813A9.978,9.978,0,0,1,6.915,19.063Z"
+                    fill="#1d1d1d"
+                  />
+                </svg>
+              </div>
+              <div className="dashboard__panel__content__stats__content">
+                <div className="dashboard__panel__content__stats__content__value">
+                  120
+                </div>
+                <div className="dashboard__panel__content__stats__content__label">
+                  Number of partners
+                </div>
+              </div>
+            </div>
           </div>
           <div className="dashboard__panel__content__col">
             <TotalReceipt />
           </div>
         </div>
-        {/* <div className="dashboard__panel__content__row">
-          <TotalPurchases />
-        </div> */}
+        <div className="dashboard__panel__content__row">
+          <TotalPurchases title="Customers" />
+          <TotalPurchases title="Partners" />
+        </div>
       </div>
     </div>
   );
@@ -295,13 +345,13 @@ function TotalCustomer({}) {
     labels,
     datasets: [
       {
-        label: "Site Page",
+        label: "Ads Posted",
         data: [40, 40, 20, 40, 40, 20, 40, 40, 20, 40, 40, 20],
         borderColor: "#37CE69",
         backgroundColor: "#37CE69",
       },
       {
-        label: "Blog",
+        label: "Total Revenue Earned",
         data: [10, 30, 100, 10, 30, 100, 10, 30, 100, 10, 30, 100],
         borderColor: "#9A7CB8",
         backgroundColor: "#9A7CB8",
@@ -312,7 +362,7 @@ function TotalCustomer({}) {
     <div className="dashboard__panel__content__post__created">
       <div className="dashboard__panel__content__post__created__header">
         <div className="dashboard__panel__content__post__created__header__heading">
-          Number of Customer
+          Number of ads
         </div>
         <input
           type="month"
@@ -342,7 +392,7 @@ function TotalDiscount({}) {
     <div className="dashboard__panel__content__pages">
       <div className="dashboard__panel__content__pages__left">
         <div className="dashboard__panel__content__pages__heading">
-          Number of partners
+          Number of customers
         </div>
         <div className="dashboard__panel__content__pages__left__content">
           <div className="dashboard__panel__content__pages__left__content__entry">
@@ -359,7 +409,7 @@ function TotalDiscount({}) {
     </div>
   );
 }
-function TotalPurchases() {
+function TotalPurchases({ title }) {
   ChartJS.register(
     CategoryScale,
     LinearScale,
@@ -423,7 +473,7 @@ function TotalPurchases() {
           marginBottom: "1em",
         }}
       >
-        Total discount amount
+        {title}
       </div>
       <Bar options={options} data={data} style={{ maxHeight: 300 }} />
     </div>
