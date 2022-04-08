@@ -14,6 +14,9 @@ import Partners from "./screens/Partners";
 import PartnersDetails from "./screens/PartnersDetails";
 import CustomersDetails from "./screens/CustomersDetails";
 import Customers from "./screens/Customers";
+import Banners from "./screens/Banners";
+import Headlines from "./screens/Headlines";
+import PartnersForm from "./screens/PartnersForm";
 
 function Dashboard() {
   return (
@@ -45,7 +48,14 @@ export default function App() {
 
         <Route path="/dashboard" element={<Dashboard />}>
           <Route path="" element={<DashboardPanel />} />
+          <Route path="ads_management/banners" element={<Banners />} />
+          <Route path="ads_management/headlines" element={<Headlines />} />
           <Route path="partners" element={<Partners />} />
+          <Route path="partners/add" element={<PartnersForm heading="Add" />} />
+          <Route
+            path="partners/edit"
+            element={<PartnersForm heading="Edit" />}
+          />
           <Route path="partners/details" element={<PartnersDetails />} />
           <Route
             path="customers"

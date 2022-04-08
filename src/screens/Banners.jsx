@@ -1,33 +1,11 @@
-import React, { useState } from "react";
+import React from "react";
 import { useNavigate } from "react-router-dom";
-import Tab from "../components/Tab";
 import TableHeaderEntry from "../components/TableHeaderEntry";
 
-function PartnersTableEntry({ onView, onEdit, onDelete }) {
+function BannersTableEntry({ onView, onEdit, onDelete }) {
   return (
     <div className="main__content__table__list">
       <div className="main__content__table__list__entry">
-        <button
-          className="main__content__table__list__entry__button main__content__table__list__entry__button__primary"
-          onClick={onView}
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            class="feather feather-eye"
-            style={{ marginTop: 7 }}
-          >
-            <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
-            <circle cx="12" cy="12" r="3"></circle>
-          </svg>
-        </button>
         <button
           className="main__content__table__list__entry__button main__content__table__list__entry__button__primary"
           onClick={onEdit}
@@ -109,30 +87,22 @@ function PartnersTableEntry({ onView, onEdit, onDelete }) {
         </button>
       </div>
       <div className="main__content__table__list__entry">Bilal John</div>
-      <div className="main__content__table__list__entry">Bilal John</div>
-      <div className="main__content__table__list__entry">Bilal John</div>
-      <div className="main__content__table__list__entry">Bilal John</div>
+      <div className="main__content__table__list__entry">+92 313 7180324</div>
       <div className="main__content__table__list__entry">
-        <div className="main__content__table__list__entry__paid">Pending</div>
+        BilalJohn@gmail.com
       </div>
-      <div className="main__content__table__list__entry">
-        <img
-          src="https://images.unsplash.com/photo-1453728013993-6d66e9c9123a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
-          alt=""
-          className="main__content__table__list__entry__img"
-        />
-      </div>
+      <div className="main__content__table__list__entry">**********8997</div>
     </div>
   );
 }
 
-export default function Partners({ onAdd, onEdit, onDelete }) {
+export default function Banners({ onAdd, onEdit, onDelete }) {
   const navigate = useNavigate();
   return (
     <div className="main">
       <div className="main__header">
         <div className="main__header__top">
-          <div className="main__header__top__heading">Partners</div>
+          <div className="main__header__top__heading">Banners</div>
           <div className="main__header__top__buttons">
             {/* <button className="main__header__top__buttons__button">
               Bulk Add
@@ -140,7 +110,7 @@ export default function Partners({ onAdd, onEdit, onDelete }) {
             <button
               className="main__header__top__buttons__button"
               onClick={() => {
-                navigate("/dashboard/partners/add");
+                onAdd(true);
               }}
             >
               Add New
@@ -152,172 +122,135 @@ export default function Partners({ onAdd, onEdit, onDelete }) {
         <div className="main__content__table">
           <div className="main__content__table__header">
             <TableHeaderEntry title="Action" />
-            <TableHeaderEntry title="Title" />
-            <TableHeaderEntry title="Duration" />
-            <TableHeaderEntry title="Is Featured" />
-            <TableHeaderEntry title="Price" />
-            <TableHeaderEntry title="Image" />
+            <TableHeaderEntry title="Name" />
+            <TableHeaderEntry title="Phone Number" />
+            <TableHeaderEntry title="Email Address" />
+            <TableHeaderEntry title="Last 4 digits of Credit/Visa card" />
           </div>
-          <PartnersTableEntry
+          <BannersTableEntry
             onView={() => {
-              navigate("/dashboard/partners/details");
+              navigate("/dashboard/Banners/details");
             }}
-            onEdit={() => {
-              navigate("/dashboard/partners/edit");
-            }}
+            onEdit={onEdit}
             onDelete={onDelete}
           />
-          <PartnersTableEntry
+          <BannersTableEntry
             onView={() => {
-              navigate("/dashboard/partners/details");
+              navigate("/dashboard/Banners/details");
             }}
-            onEdit={() => {
-              navigate("/dashboard/partners/edit");
-            }}
+            onEdit={onEdit}
             onDelete={onDelete}
           />
-          <PartnersTableEntry
+          <BannersTableEntry
             onView={() => {
-              navigate("/dashboard/partners/details");
+              navigate("/dashboard/Banners/details");
             }}
-            onEdit={() => {
-              navigate("/dashboard/partners/edit");
-            }}
+            onEdit={onEdit}
             onDelete={onDelete}
           />
-          <PartnersTableEntry
+          <BannersTableEntry
             onView={() => {
-              navigate("/dashboard/partners/details");
+              navigate("/dashboard/Banners/details");
             }}
-            onEdit={() => {
-              navigate("/dashboard/partners/edit");
-            }}
+            onEdit={onEdit}
             onDelete={onDelete}
           />
-          <PartnersTableEntry
+          <BannersTableEntry
             onView={() => {
-              navigate("/dashboard/partners/details");
+              navigate("/dashboard/Banners/details");
             }}
-            onEdit={() => {
-              navigate("/dashboard/partners/edit");
-            }}
+            onEdit={onEdit}
             onDelete={onDelete}
           />
-          <PartnersTableEntry
+          <BannersTableEntry
             onView={() => {
-              navigate("/dashboard/partners/details");
+              navigate("/dashboard/Banners/details");
             }}
-            onEdit={() => {
-              navigate("/dashboard/partners/edit");
-            }}
+            onEdit={onEdit}
             onDelete={onDelete}
           />
-          <PartnersTableEntry
+          <BannersTableEntry
             onView={() => {
-              navigate("/dashboard/partners/details");
+              navigate("/dashboard/Banners/details");
             }}
-            onEdit={() => {
-              navigate("/dashboard/partners/edit");
-            }}
+            onEdit={onEdit}
             onDelete={onDelete}
           />
-          <PartnersTableEntry
+          <BannersTableEntry
             onView={() => {
-              navigate("/dashboard/partners/details");
+              navigate("/dashboard/Banners/details");
             }}
-            onEdit={() => {
-              navigate("/dashboard/partners/edit");
-            }}
+            onEdit={onEdit}
             onDelete={onDelete}
           />
-          <PartnersTableEntry
+          <BannersTableEntry
             onView={() => {
-              navigate("/dashboard/partners/details");
+              navigate("/dashboard/Banners/details");
             }}
-            onEdit={() => {
-              navigate("/dashboard/partners/edit");
-            }}
+            onEdit={onEdit}
             onDelete={onDelete}
           />
-          <PartnersTableEntry
+          <BannersTableEntry
             onView={() => {
-              navigate("/dashboard/partners/details");
+              navigate("/dashboard/Banners/details");
             }}
-            onEdit={() => {
-              navigate("/dashboard/partners/edit");
-            }}
+            onEdit={onEdit}
             onDelete={onDelete}
           />
-          <PartnersTableEntry
+          <BannersTableEntry
             onView={() => {
-              navigate("/dashboard/partners/details");
+              navigate("/dashboard/Banners/details");
             }}
-            onEdit={() => {
-              navigate("/dashboard/partners/edit");
-            }}
+            onEdit={onEdit}
             onDelete={onDelete}
           />
-          <PartnersTableEntry
+          <BannersTableEntry
             onView={() => {
-              navigate("/dashboard/partners/details");
+              navigate("/dashboard/Banners/details");
             }}
-            onEdit={() => {
-              navigate("/dashboard/partners/edit");
-            }}
+            onEdit={onEdit}
             onDelete={onDelete}
           />
-          <PartnersTableEntry
+          <BannersTableEntry
             onView={() => {
-              navigate("/dashboard/partners/details");
+              navigate("/dashboard/Banners/details");
             }}
-            onEdit={() => {
-              navigate("/dashboard/partners/edit");
-            }}
+            onEdit={onEdit}
             onDelete={onDelete}
           />
-          <PartnersTableEntry
+          <BannersTableEntry
             onView={() => {
-              navigate("/dashboard/partners/details");
+              navigate("/dashboard/Banners/details");
             }}
-            onEdit={() => {
-              navigate("/dashboard/partners/edit");
-            }}
+            onEdit={onEdit}
             onDelete={onDelete}
           />
-          <PartnersTableEntry
+          <BannersTableEntry
             onView={() => {
-              navigate("/dashboard/partners/details");
+              navigate("/dashboard/Banners/details");
             }}
-            onEdit={() => {
-              navigate("/dashboard/partners/edit");
-            }}
+            onEdit={onEdit}
             onDelete={onDelete}
           />
-          <PartnersTableEntry
+          <BannersTableEntry
             onView={() => {
-              navigate("/dashboard/partners/details");
+              navigate("/dashboard/Banners/details");
             }}
-            onEdit={() => {
-              navigate("/dashboard/partners/edit");
-            }}
+            onEdit={onEdit}
             onDelete={onDelete}
           />
-          <PartnersTableEntry
+          <BannersTableEntry
             onView={() => {
-              navigate("/dashboard/partners/details");
+              navigate("/dashboard/Banners/details");
             }}
-            onEdit={() => {
-              navigate("/dashboard/partners/edit");
-            }}
+            onEdit={onEdit}
             onDelete={onDelete}
           />
-          <PartnersTableEntry
+          <BannersTableEntry
             onView={() => {
-              navigate("/dashboard/partners/details");
+              navigate("/dashboard/Banners/details");
             }}
-            onEdit={() => {
-              navigate("/dashboard/partners/edit");
-            }}
+            onEdit={onEdit}
             onDelete={onDelete}
           />
         </div>
