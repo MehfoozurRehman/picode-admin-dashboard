@@ -1,7 +1,7 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import logo from "../assets/logo.png";
 import authBg from "../assets/authBg.png";
-import { Link } from "react-router-dom";
 import InputBox from "../components/InputBox";
 import CheckBox from "../components/Checkbox";
 

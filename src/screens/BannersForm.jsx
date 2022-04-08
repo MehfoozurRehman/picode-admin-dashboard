@@ -33,34 +33,33 @@ export default function BannersForm({ heading }) {
         <div className="main__content__form">
           <div className="main__content__form__col">
             <div className="popup__form__input">
-              <div className="popup__form__input__label">Name</div>
+              <div className="popup__form__input__label">Title</div>
               <input
                 type="text"
                 className="popup__form__input__field"
-                placeholder="Enter Name"
+                placeholder="Enter Title"
               />
               <div className="popup__form__input__error"></div>
             </div>
           </div>
           <div className="main__content__form__col">
             <div className="popup__form__input">
-              <div className="popup__form__input__label">Name</div>
+              <div className="popup__form__input__label">Duration</div>
               <input
-                type="text"
+                type="time"
                 className="popup__form__input__field"
-                placeholder="Enter Name"
+                placeholder="Enter Duration"
               />
               <div className="popup__form__input__error"></div>
             </div>
           </div>
           <div className="main__content__form__col">
             <div className="popup__form__input">
-              <div className="popup__form__input__label">Category</div>
+              <div className="popup__form__input__label">Is Featured</div>
               <Select
                 options={[
-                  { value: "chocolate", label: "Chocolate" },
-                  { value: "strawberry", label: "Strawberry" },
-                  { value: "vanilla", label: "Vanilla" },
+                  { value: true, label: "Yes" },
+                  { value: false, label: "No" },
                 ]}
                 theme={(theme) => ({
                   ...theme,
@@ -72,20 +71,25 @@ export default function BannersForm({ heading }) {
                     primary50: "f6f6f6",
                   },
                 })}
-                isMulti
               />
               <div className="popup__form__input__error"></div>
             </div>
           </div>
-          <div className="main__content__form__col" style={{ width: "15%" }}>
-            <UploadImage label="Image" />
-          </div>
-          <div className="main__content__form__col" style={{ width: "85%" }}>
+          <div className="main__content__form__col">
             <div className="popup__form__input">
-              <div className="popup__form__input__label">Message</div>
-              <TextArea />
+              <div className="popup__form__input__label">Price</div>
+              <input
+                type="text"
+                className="popup__form__input__field"
+                placeholder="Enter Price"
+              />
               <div className="popup__form__input__error"></div>
             </div>
+          </div>
+          <div className="main__content__form__col"></div>
+          <div className="main__content__form__col"></div>
+          <div className="main__content__form__col">
+            <UploadImage label="Image" />
           </div>
         </div>
       </div>

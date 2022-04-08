@@ -6,27 +6,6 @@ function HeadlinesTableEntry({ onView, onEdit, onDelete }) {
   return (
     <div className="main__content__table__list">
       <div className="main__content__table__list__entry">
-        {/* <button
-          className="main__content__table__list__entry__button main__content__table__list__entry__button__primary"
-          onClick={onView}
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            class="feather feather-eye"
-            style={{ marginTop: 7 }}
-          >
-            <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
-            <circle cx="12" cy="12" r="3"></circle>
-          </svg>
-        </button> */}
         <button
           className="main__content__table__list__entry__button main__content__table__list__entry__button__primary"
           onClick={onEdit}
@@ -131,7 +110,7 @@ export default function Headlines({ onAdd, onEdit, onDelete }) {
             <button
               className="main__header__top__buttons__button"
               onClick={() => {
-                onAdd(true);
+                navigate("/dashboard/ads_management/headlines/add");
               }}
             >
               Add New
@@ -153,126 +132,153 @@ export default function Headlines({ onAdd, onEdit, onDelete }) {
             onView={() => {
               navigate("/dashboard/Headlines/details");
             }}
-            onEdit={onEdit}
+            onEdit={() => {
+              navigate("/dashboard/ads_management/headlines/edit");
+            }}
             onDelete={onDelete}
           />
           <HeadlinesTableEntry
             onView={() => {
               navigate("/dashboard/Headlines/details");
             }}
-            onEdit={onEdit}
+            onEdit={() => {
+              navigate("/dashboard/ads_management/headlines/edit");
+            }}
             onDelete={onDelete}
           />
           <HeadlinesTableEntry
             onView={() => {
               navigate("/dashboard/Headlines/details");
             }}
-            onEdit={onEdit}
+            onEdit={() => {
+              navigate("/dashboard/ads_management/headlines/edit");
+            }}
             onDelete={onDelete}
           />
           <HeadlinesTableEntry
             onView={() => {
               navigate("/dashboard/Headlines/details");
             }}
-            onEdit={onEdit}
+            onEdit={() => {
+              navigate("/dashboard/ads_management/headlines/edit");
+            }}
             onDelete={onDelete}
           />
           <HeadlinesTableEntry
             onView={() => {
               navigate("/dashboard/Headlines/details");
             }}
-            onEdit={onEdit}
+            onEdit={() => {
+              navigate("/dashboard/ads_management/headlines/edit");
+            }}
             onDelete={onDelete}
           />
           <HeadlinesTableEntry
             onView={() => {
               navigate("/dashboard/Headlines/details");
             }}
-            onEdit={onEdit}
+            onEdit={() => {
+              navigate("/dashboard/ads_management/headlines/edit");
+            }}
             onDelete={onDelete}
           />
           <HeadlinesTableEntry
             onView={() => {
               navigate("/dashboard/Headlines/details");
             }}
-            onEdit={onEdit}
+            onEdit={() => {
+              navigate("/dashboard/ads_management/headlines/edit");
+            }}
             onDelete={onDelete}
           />
           <HeadlinesTableEntry
             onView={() => {
               navigate("/dashboard/Headlines/details");
             }}
-            onEdit={onEdit}
+            onEdit={() => {
+              navigate("/dashboard/ads_management/headlines/edit");
+            }}
             onDelete={onDelete}
           />
           <HeadlinesTableEntry
             onView={() => {
               navigate("/dashboard/Headlines/details");
             }}
-            onEdit={onEdit}
+            onEdit={() => {
+              navigate("/dashboard/ads_management/headlines/edit");
+            }}
             onDelete={onDelete}
           />
           <HeadlinesTableEntry
             onView={() => {
               navigate("/dashboard/Headlines/details");
             }}
-            onEdit={onEdit}
+            onEdit={() => {
+              navigate("/dashboard/ads_management/headlines/edit");
+            }}
             onDelete={onDelete}
           />
           <HeadlinesTableEntry
             onView={() => {
               navigate("/dashboard/Headlines/details");
             }}
-            onEdit={onEdit}
+            onEdit={() => {
+              navigate("/dashboard/ads_management/headlines/edit");
+            }}
             onDelete={onDelete}
           />
           <HeadlinesTableEntry
             onView={() => {
               navigate("/dashboard/Headlines/details");
             }}
-            onEdit={onEdit}
+            onEdit={() => {
+              navigate("/dashboard/ads_management/headlines/edit");
+            }}
             onDelete={onDelete}
           />
           <HeadlinesTableEntry
             onView={() => {
               navigate("/dashboard/Headlines/details");
             }}
-            onEdit={onEdit}
+            onEdit={() => {
+              navigate("/dashboard/ads_management/headlines/edit");
+            }}
             onDelete={onDelete}
           />
           <HeadlinesTableEntry
             onView={() => {
               navigate("/dashboard/Headlines/details");
             }}
-            onEdit={onEdit}
+            onEdit={() => {
+              navigate("/dashboard/ads_management/headlines/edit");
+            }}
             onDelete={onDelete}
           />
           <HeadlinesTableEntry
             onView={() => {
               navigate("/dashboard/Headlines/details");
             }}
-            onEdit={onEdit}
+            onEdit={() => {
+              navigate("/dashboard/ads_management/headlines/edit");
+            }}
             onDelete={onDelete}
           />
           <HeadlinesTableEntry
             onView={() => {
               navigate("/dashboard/Headlines/details");
             }}
-            onEdit={onEdit}
+            onEdit={() => {
+              navigate("/dashboard/ads_management/headlines/edit");
+            }}
             onDelete={onDelete}
           />
           <HeadlinesTableEntry
             onView={() => {
               navigate("/dashboard/Headlines/details");
             }}
-            onEdit={onEdit}
-            onDelete={onDelete}
-          />
-          <HeadlinesTableEntry
-            onView={() => {
-              navigate("/dashboard/Headlines/details");
+            onEdit={() => {
+              navigate("/dashboard/ads_management/headlines/edit");
             }}
-            onEdit={onEdit}
             onDelete={onDelete}
           />
         </div>
